@@ -1,4 +1,4 @@
-/*--
+--
 Author: W3layouts
 Author URL: http://w3layouts.com
 License: Creative Commons Attribution 3.0 Unported
@@ -34,7 +34,7 @@ body a:hover{
 /*--banner--*/
 .banner{
 	min-height: 700px;
-	background:url(../images/mac.jpg)no-repeat center 0px;
+	background:url(../images/bg-header.jpg)no-repeat center 0px;
 	background-size:cover;
 	position: relative;
 }
@@ -563,12 +563,29 @@ body a:hover{
 }
 /*--//modal--*/
 /*--about--*/
-.about,.team,.contact,.skills{
+.team {
+ /*background: url(../images/services.jpg)no-repeat 0px 0px;*/
+ background-size: cover;
+ /*background: #eee;*/
+}
+
+.about,.contact,.skills{
 	padding:6em 0;
+      background: #eee;
 }
 .title {
-  margin-bottom: 5em;
+  margin-bottom: 4em;
 }
+.about .title p {
+  color: #999;
+}
+
+.team .title h3 {
+
+  /*color: #fff;*/
+}
+
+
 .title h3{
   font-size: 3.5em;
   text-align: center;
@@ -593,7 +610,7 @@ body a:hover{
 }
 .title p {
   font-size: 1em;
-  color: #999;
+  color: #fff;
   line-height: 1.8em;
   text-align: center;
   margin-top: 1.5em;
@@ -719,6 +736,12 @@ p {
   background-size: cover;
   padding: 6em 0;
 }
+.features-row p {
+  color: #fff;
+}
+.features .title h3,.portfolio .title h3{
+  color: #fff;
+}
 .features-grids {
   border: 1px solid #fff;
   padding: 2em;
@@ -765,6 +788,8 @@ p {
   opacity: .3;
   -moz-opacity: .3;
 }
+
+
 /*--//features--*/
 /*--team--*/
 img.img-responsive {
@@ -798,12 +823,66 @@ img.img-responsive {
 .team-grids:hover .captn{
 	bottom: 24%;
 }
-/*--social-icons--*/
-.social-icons ul{
-	display:inline-block;
-	padding: 0;
+/*Services*/
+.box {
+  /*background: rgb(0,0,0);*/
+  background: rgb(85,107,47);
+  opacity: .8;
+  transition:all 0.2s ease;
+  /*border:2px dashed #dadada;*/
+  /*margin-top: 10px;*/
+  box-sizing: border-box;
+  border-radius: 5px;
+  background-clip: padding-box;
+  padding:0 20px 20px 20px;
+  min-height:340px;
+  color: #fff;
 }
-.social-icons ul li {
+
+/*.box:hover {
+  border:2px solid #525C7A;
+  }*/
+
+  .box span.box-title {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 300;
+    text-transform: uppercase;
+  }
+
+  .box .box-content {
+    padding: 16px;
+    border-radius: 0 0 2px 2px;
+    background-clip: padding-box;
+    box-sizing: border-box;
+  }
+  .box-content h2 {
+    font-size: 25px;
+  }
+  .box .box-content p {
+    color:#515c66;
+    text-transform:none;
+  }
+
+  .services-icon {
+    display: block;
+    text-align: center;
+  }
+  .services-icon img {
+    padding: 5px;
+    border-radius: 50%;
+    /*background: rgb(0,0,0);*/
+    background: rgb(85,107,47);
+    opacity: .8;
+  }
+
+
+  /*--social-icons--*/
+  .social-icons ul{
+   display:inline-block;
+   padding: 0;
+ }
+ .social-icons ul li {
   position: inherit;
   display: inline-block;
   width: inherit;
@@ -2151,4 +2230,4 @@ img.img-responsive {
     padding: 1em;
   }
 }
-/*--//responsive-design---*/
+/*--//responsive-design---

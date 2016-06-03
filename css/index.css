@@ -63,6 +63,9 @@ ul.simplefilter {
     text-align: center;
 	margin-bottom: 1em;
 }
+
+
+
 /*-- response --*/
 @media(max-width:480px){
 .simplefilter li:before {
